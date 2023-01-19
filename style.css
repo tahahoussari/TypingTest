@@ -16,7 +16,7 @@ body, .quote-input{
 }
 
 .container {
-    background-color: rgb(255, 255, 255);
+    background-color: yellow;
     padding: 1rem;
     border-radius: .5rem;
     width: 700px;
@@ -52,4 +52,13 @@ body, .quote-input{
 
 .quote-input:focus{
     border-color: black;
+}
+
+.correct{
+    color: green;
+}
+
+.incorrect{
+    color: red;
+    text-decoration: underline;
 }
