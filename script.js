@@ -2,10 +2,12 @@ const RANDOM_QUOTE_API_URL = 'http://api.quotable.io/random'
 const quoteDisplayElement = document.getElementById('quoteDisplay')
 const quoteInputElement = document.getElementById('quoteInput')
 const timerElement = document.getElementById('timer')
+const wordsPerMinute = document.getElementById('wpm')
 
 quoteInputElement.addEventListener('input', () => {
   const arrayQuote = quoteDisplayElement.querySelectorAll('span')
   const arrayValue = quoteInputElement.value.split('')
+  const words = quoteInputElement.value.split(' ')
 
   let correct = true
   arrayQuote.forEach((characterSpan, index) => {
@@ -42,6 +44,7 @@ async function renderNewQuote() {
     quoteDisplayElement.appendChild(characterSpan)
   })
   quoteInputElement.value = null
+  wordsPerMinute.innerText = 123
   startTimer()
 }
 

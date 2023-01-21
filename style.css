@@ -31,6 +31,15 @@ body, .quote-input{
     font-weight: bold;
 }
 
+.w-p-m{
+    position: absolute;
+    font-size: 3rem;
+    top: 2rem;
+    color: white;
+    font-weight: bold;
+    padding-top: 150px;
+}
+
 .quote-display{
     margin-bottom: 1rem;
     margin-left: calc(1rem + 2px);
